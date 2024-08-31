@@ -10,10 +10,10 @@ $(document).ready(function() {
         event.preventDefault(); // Заборонити стандартне надсилання форми
         const phoneInput = $('#phone');
         const phoneValue = phoneInput.val().trim();
-        const digitsOnly = phoneValue.replace(/\D/g, '');
+        // const digitsOnly = phoneValue.JSON.stringify();
         const phonePattern = /^\+38 \((067|068|096|097|098|050|066|095|099|063|073|093|091)\) \d{3} \d{4}$/; // Регулярний вираз для номера телефону
 
-        console.log(phoneValue);
+        console.log(digitsOnly);
         if (!phonePattern.test(phoneInput.val())) {
             event.preventDefault(); // Заборонити надсилання форми
             phoneInput.css('border', '1px solid red'); // Змінити бордер на червоний
@@ -22,9 +22,10 @@ $(document).ready(function() {
         }
 
         $.ajax({
-            type: 'POST',
-            url: '/.netlify/functions/send-messages', // URL скрипта, на який відправляється запит
-            data: { phone: phoneValue },
+            type: 'POST', // Використовується POST для відправки даних
+            url: '/.netlify/functions/send-messages', // URL вашої Netlify функції
+            data: JSON.stringify({ phone: phoneValue }), // Перетворюємо об'єкт у JSON-рядок
+            contentType: 'application/json', // Вказуємо, що дані передаються у форматі JSON
             success: function(response) {
                 console.log('Повідомлення надіслано успішно:', response);
             },
