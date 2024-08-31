@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-exports.handler = async function(event, context) {
+export async function handler(event, context) {
     try {
         const telegramToken = '7194862957:AAHmtFsAwn9KfHCChBfkmTd2Ac3QAI2wdgg'; // Замініть на ваш токен бота
         const chatId = '444476089'; // Замініть на ваш chat ID
@@ -35,4 +35,4 @@ exports.handler = async function(event, context) {
             body: JSON.stringify({ error: 'Внутрішня помилка сервера' }),
         };
     }
-};
+}
