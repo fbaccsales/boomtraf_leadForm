@@ -23,7 +23,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: 'POST',
-            url: '/.netlify/functions/send-message', // URL скрипта, на який відправляється запит
+            url: '/.netlify/functions/send-messages', // URL скрипта, на який відправляється запит
             data: { phone: digitsOnly },
             success: function(response) {
                 console.log('Повідомлення надіслано успішно:', response);
