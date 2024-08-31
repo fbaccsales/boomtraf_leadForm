@@ -24,7 +24,7 @@ $(document).ready(function() {
         $.ajax({
             type: 'POST',
             url: '/.netlify/functions/send-messages', // URL скрипта, на який відправляється запит
-            data: { phone: digitsOnly },
+            data: { phone: phoneValue },
             success: function(response) {
                 console.log('Повідомлення надіслано успішно:', response);
             },
