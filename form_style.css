@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.orange-bg {
+    background: linear-gradient(to bottom, #ff7c00 0%, #ff9b00 25%, #f0a83d 50%, #e8c188 75%,#e4dfcf 100%);
+
+}
+
+/* header  */
+
+header {
+    background-color: #FF8600;
+    min-height: 80px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link {
+    position: relative;
+}
+
+.header__link::after {
+    content: '';
+    background-image: url(src/header_btn.svg);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 19px;
+    height: 24px;
+}
+
+.header__link a {
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 30px;
+}
+
+/* header  */
+
+/* main */
+
+.main_form {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.user_form {
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    max-width: 520px;
+}
+
+.user_form h2 {
+    color: #27187E;
+    text-align: center;
+}
+
+.form_fields {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_fields input {
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #fff;
+    padding: 20px 15px;
+    border: 1px solid #838CAF;
+    color: #27187E;
+}
+.form_fields input:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.form_fields input::placeholder{
+    color: #27187E;
+}
+
+.policy {
+    margin-top: 20px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    width: 20px!important;
+    height: 20px;
+    /* font-size: 20px; */
+}
+
+.policy label{
+    color: #838CAF;
+    max-width: 370px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+    padding: 20px 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #27187E;
+    color: #fff;
+    width: 100%;
+    border-radius: 10px;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+/* main */
+
+/* footer */
+
+footer {
+    background-color: #838CAF;
+    padding: 60px 0 20px;
+}
+
+footer h5 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    max-width: 180px;
+}
+
+footer h6 {
+    margin: 20px 0;
+    font-family: "Jura", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    max-width: 180px;
+}
+
+footer a {
+    position: relative;
+    color: #27187E;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+footer a::after {
+    content: '';
+    background-image: url(src/substract_footer.png);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -30px;
+    width: 19px;
+    height: 24px;
+}
+
+footer p {
+    margin-top: 20px;
+    font-family: "Jura", sans-serif;
+    font-size: 14px;
+    color: #F1F2F6;
+}
+
+.company-name{
+    color: #fff;
+    font-size: 18px;
+}
+
+/* footer */
+
+/* phone adaptive */
+
+@media (max-width: 490px) {
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+header{
+    padding: 0;
+}
+
+header img {
+    width: 40%;
+}
+
+.header__link a{
+    font-size: 14px;
+}
+}
+/* phone adaptive */

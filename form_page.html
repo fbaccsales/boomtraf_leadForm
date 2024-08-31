@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+</head>
+
+<body>
+    <header>
+        <img src="src/logo.png" alt="" class="header__logo">
+        <div class="header__link">
+            <a href="#">Отримати гроші</a>
+        </div>
+    </header>
+    <main>
+        <section class="main_form orange-bg">
+            <div class="container">
+                <form action="" class="user_form" id="phoneForm">
+                    <h2>Введіть ваші дані</h2>
+                    <div class="form_fields">
+                        <input type="text" placeholder="Ім'я">
+                        <input type="text" placeholder="Прізвище">
+                        <input id="phone" type="tel" placeholder="+38 (099) 999 9999">
+                    </div>
+                    <div class="policy">
+                        <input type="checkbox" checked disabled>
+                        <label for="policy">Я надаю згоду на обробку моїх персональних данних</label>
+                    </div>
+                    <input type="submit" value="Отримати гроші">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <h5>Потрібні гроші?</h5>
+            <h6>Отримай від 0,01% онлайн на картку</h6>
+            <a href="#">Отримати гроші</a>
+            <p>Сайт Mi Credit надає безкоштовні послуги для підбору кредитних продуктів для клієнтів, а саме пропонує
+                клієнту список пропозицій кредитних організацій, до яких клієнт може звернутися з метою оформлення
+                заявки на кредитний продукт. Mi Credit не є банком або кредитором, не належить до кредитних організацій
+                і не несе відповідальності за підписання будь-яких договорів кредитування або поруки за ними. Мінімальна
+                процентна ставка у деяких партнерів складає 0,01%. Для того щоб оформити заявку на отримання позики,
+                необхідно заповнити анкету на сайті проекту. Здійснюючи будь-які дії на сайті, вам необхідно дати згоду
+                на Обробку персональних даних и Згоду на отримання рекламних матеріалів. Сервіс Mi Credit використовує
+                кукі для надання послуг. Умови зберігання або доступу до cookie Ви можете самостійно налаштувати у
+                своєму браузері. Сервіс призначений для використання особами віком від 18 років. Розрахунок у
+                калькуляторах, наданий на сайті, базується на середньому показнику процентної ставки, яка буде
+                запропонована вам фінансовими організаціями.</p>
+            <p>З будь-яких питань ви можете зв'язатися із спеціалістами сервісу поштою micredit@gmail.com. Обробка
+                заявки повністю безкоштовна.</p>
+            <div class="footer__company-info">
+                <p class="company-name">Mi Credit</p>
+                <p>micredit@gmail.com</p>
+            </div>
+            <div class="footer__visa">
+                <img src="" alt="">
+            </div>
+            <div class="footer__name">
+                <p>© 2024 Mi Credit</p>
+            </div>
+        </div>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.3/inputmask/inputmask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.3/inputmask/inputmask.phone.extensions.min.js"></script>
+    <script src="form.js"></script>
+
+</body>
+
+</html>

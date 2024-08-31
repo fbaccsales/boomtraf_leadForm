@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="src/logo.png" alt="" class="header__logo">
+        <div class="header__link">
+            <a href="form_page.html">Отримати гроші</a>
+        </div>
+    </header>
+    <main>
+        <section class="mainscreen orange-bg">
+            <div class="container">
+                <div class="mainscreen_content">
+                    <div class="mainscreen_content__text">
+                        <h1>Потрібні гроші?</h1>
+                        <h3>Отримай від 0,01% онлайн на картку</h3>
+                    </div>
+                    <div class="mainscreen_content__calculator">
+                        <form action="">
+                            <div class="calculator__header">
+                                Заповніть заявку та отримайте гроші
+                            </div>
+                            <div class="calculator__content">
+                                <div class="calculator__info">
+                                    <div class="calculator__text"> Сума кредиту</div>
+                                    <div class="calculator__sum"><span id="sum">12 000</span></div>
+                                </div>
+                                <div class="calculator__input">
+                                    <input id="input" type="range" min="1000" max="20000" step="100">
+                                    <div class="range-info">
+                                        <div class="min-range">1000</div>
+                                        <div class="max-range">20000</div>
+                                    </div>
+                                </div>
+                                <input class="calculator__button" type="button" value="Отримати гроші">
+                            </div>
+                            <div class="calculator__footer">БЕЗ комісії сервісу та з будь-якою кредитною історією</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="how_take">
+            <div class="container">
+                <div class="how_take__title">
+                    <h2>ЯК швидко ОТРИМАТИ ГРОШІ?</h2>
+                </div>
+                <div class="how_take__items">
+                    <div class="item">
+                        <img src="src/setting.png" alt="" class="item__img">
+                        <p class="item__text">ЗАПОВНІТЬ заявку</p>
+                    </div>
+                    <div class="item">
+                        <img src="src/wallet.png" alt="" class="item__img">
+                        <p class="item__text">отримайте рішення</p>
+                    </div>
+                    <div class="item">
+                        <img src="src/notice.png" alt="" class="item__img">
+                        <p class="item__text">Отримайте ГРОШІ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="conditions orange-bg">
+            <div class="container">
+                <h2>Умови </br>отримання </br>грошей</h2>
+                <div class="conditions__content">
+                    <div class="conditions__list">
+                        <div class="condition">
+                            <h5 class="condition__title">вік</h5>
+                            <p class="condition__text">від 18 до 70 років</p>
+                        </div>
+                        <div class="condition">
+                            <h5 class="condition__title">Відсоткова ставка</h5>
+                            <p class="condition__text">від 0,01% на перший
+                                кредит</p>
+                        </div>
+                        <div class="condition">
+                            <h5 class="condition__title">онлайн</h5>
+                            <p class="condition__text">на будь яку картку
+                                україни</p>
+                        </div>
+                    </div>
+                    <div class="conditions__calc mainscreen_content__calculator">
+                        <form action="">
+                            <div class="calculator__header">
+                                Заповніть заявку та отримайте гроші
+                            </div>
+                            <div class="calculator__content">
+                                <div class="calculator__info">
+                                    <div class="calculator__text"> Сума кредиту</div>
+                                    <div class="calculator__sum"><span id="sum_second">12 000</span></div>
+                                </div>
+                                <div class="calculator__input">
+                                    <input id="input_second" type="range" min="1000" max="20000" step="100">
+                                    <div class="range-info">
+                                        <div class="min-range">1000</div>
+                                        <div class="max-range">20000</div>
+                                    </div>
+                                </div>
+                                <input class="calculator__button" type="button" value="Отримати гроші">
+                            </div>
+                            <div class="calculator__footer">БЕЗ комісії сервісу та з будь-якою кредитною історією</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <h5>Потрібні гроші?</h5>
+            <h6>Отримай від 0,01% онлайн на картку</h6>
+            <a href="form_page.html">Отримати гроші</a>
+            <p>Сайт Mi Credit надає безкоштовні послуги для підбору кредитних продуктів для клієнтів, а саме пропонує
+                клієнту список пропозицій кредитних організацій, до яких клієнт може звернутися з метою оформлення
+                заявки на кредитний продукт. Mi Credit не є банком або кредитором, не належить до кредитних організацій
+                і не несе відповідальності за підписання будь-яких договорів кредитування або поруки за ними. Мінімальна
+                процентна ставка у деяких партнерів складає 0,01%. Для того щоб оформити заявку на отримання позики,
+                необхідно заповнити анкету на сайті проекту. Здійснюючи будь-які дії на сайті, вам необхідно дати згоду
+                на Обробку персональних даних и Згоду на отримання рекламних матеріалів. Сервіс Mi Credit використовує
+                кукі для надання послуг. Умови зберігання або доступу до cookie Ви можете самостійно налаштувати у
+                своєму браузері. Сервіс призначений для використання особами віком від 18 років. Розрахунок у
+                калькуляторах, наданий на сайті, базується на середньому показнику процентної ставки, яка буде
+                запропонована вам фінансовими організаціями.</p>
+            <p>З будь-яких питань ви можете зв'язатися із спеціалістами сервісу поштою micredit@gmail.com. Обробка
+                заявки повністю безкоштовна.</p>
+            <div class="footer__company-info">
+                <p class="company-name">Mi Credit</p>
+                <p>micredit@gmail.com</p>
+            </div>
+            <div class="footer__visa">
+                <img src="" alt="">
+            </div>
+            <div class="footer__name">
+                <p>© 2024 Mi Credit</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

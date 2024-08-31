@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.orange-bg {
+    background: linear-gradient(to bottom, #ff7c00 0%, #ff9b00 25%, #f0a83d 50%, #e8c188 75%,#e4dfcf 100%);
+
+}
+
+/* header  */
+
+header {
+    background-color: #FF8600;
+    min-height: 80px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link {
+    position: relative;
+}
+
+.header__link::after {
+    content: '';
+    background-image: url(src/header_btn.svg);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 19px;
+    height: 24px;
+}
+
+.header__link a {
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 30px;
+}
+
+/* header  */
+
+/* main */
+
+    /* mainscreen */
+.mainscreen {
+    /* background: linear-gradient(to bottom, #ff7c00 0%, #ff9b00 25%, #f0a83d 50%, #e8c188 75%,#e4dfcf 100%); */
+    height: 100vh;
+    position: relative;
+}
+
+.mainscreen::after {
+    content: '';
+    background-image: url(src/card.png);
+    position: absolute;
+    bottom: 0px;
+    left: 15%;
+    width: 681px;
+    height: 190px;
+}
+
+.mainscreen_content {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainscreen_content__text {
+    max-width: 50%;
+}
+
+.mainscreen_content__text h1 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.mainscreen_content__text h3 {
+    margin-top: 30px;
+    font-family: "Jura", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 340px;
+}
+
+.mainscreen_content__calculator {
+    background-color: #fff;
+    display: flex;
+    max-width: 400px;
+    border-radius: 24px;
+    color: #27187E;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.calculator__header {
+    padding: 15px;
+    background-color: #ff7c00;
+    border-radius: 23px 23px 0 0;
+    color: #fff;
+    font-weight: 700;
+}
+
+.calculator__content {
+    padding: 25px 15px 0px;
+}
+
+.calculator__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calculator__text, .calculator__sum {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.calculator__sum {
+    padding: 5px 10px;
+    border: 2px solid #F1F2F6;
+    border-radius: 20px;
+}
+
+.calculator__input {
+    padding-top: 20px;
+}
+
+.calculator__input input {
+    width: 100%;
+    color: #ff7c00;
+}
+
+input[type="range"] {
+    /* Додавання стилю для самої доріжки */
+    -webkit-appearance: none; /* Для Safari та Chrome */
+    appearance: none;
+    width: 100%; /* Ширина повзунка */
+    height: 8px; /* Висота доріжки */
+    background: #ff7c00; /* Колір доріжки */
+    border-radius: 5px; /* Краї доріжки */
+    outline: none; /* Прибирає синю обводку при фокусі */
+}
+
+/* Стиль для повзунка */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Для Safari та Chrome */
+    appearance: none;
+    width: 20px; /* Ширина повзунка */
+    height: 20px; /* Висота повзунка */
+    background-color: #fff;
+    border: 6px solid #27187E;
+    /* border-color: #; Колір повзунка */
+    border-radius: 50%; /* Круглий повзунок */
+    cursor: pointer; /* Курсор у вигляді руки при наведенні */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px; /* Ширина повзунка для Firefox */
+    height: 20px; /* Висота повзунка для Firefox */
+    background: #ff7c00; /* Колір повзунка для Firefox */
+    border-radius: 50%; /* Круглий повзунок для Firefox */
+    cursor: pointer; /* Курсор у вигляді руки при наведенні */
+}
+
+.range-info {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.min-range, .max-range {
+    color: #838CAF;
+    font-size: 14px;
+}
+
+.calculator__button {
+    margin-top: 30px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    background: #27187E;
+    border-radius: 10px;
+    padding: 20px 15px;
+    color: #fff;
+}
+
+.calculator__button:hover {
+    cursor: pointer;
+}
+
+.calculator__footer {
+    font-family: "Jura", sans-serif;
+    /* margin-top: 20px; */
+    padding: 25px 20px 25px;
+    color: #838CAF;
+    font-size: 14px;
+    text-align: center;
+}
+
+    /* mainscreen */
+
+    /* how_take */
+
+.how_take {
+    background-color: #fff;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.how_take__title {
+    display: flex;
+    justify-content: center;
+}
+
+.how_take__title h2 {
+    position: relative;
+    /* margin: 80px auto 0px;  */
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #27187E;
+    max-width: 192px;
+}
+
+.how_take__title h2::after {
+    content: '';
+    background: url(src/Subtract.png);
+    position: absolute;
+    bottom: -40px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 36px;
+    height: 29px;
+}
+
+.how_take__items {
+    margin-top: 120px;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item p {
+    margin-left: 10px;
+    color: #27187E;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+    /* how_take */
+
+    /* conditions */
+.conditions {
+    padding: 80px 0;
+    height: 90vh;
+}
+
+.conditions h2 {
+    position: relative;
+    max-width: 560px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.conditions h2::after {
+    content: '';
+    background: url(src/header_btn.svg);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 30px;
+    height: 35px;
+}
+
+.conditions__content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conditions__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 560px;
+    width: 100%;
+}
+
+.condition {
+    width: 100%;
+    padding: 25px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.condition__title {
+    color: #ff7c00;
+    text-transform: uppercase;
+    font-family: "Jura", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.condition__text {
+    margin-top: 20px;
+    color: #27187E;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+    /* conditions */
+
+/* main */
+
+/* footer */
+
+footer {
+    background-color: #838CAF;
+    padding: 60px 0 20px;
+}
+
+footer h5 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    max-width: 180px;
+}
+
+footer h6 {
+    margin: 20px 0;
+    font-family: "Jura", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    max-width: 180px;
+}
+
+footer a {
+    position: relative;
+    color: #27187E;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+footer a::after {
+    content: '';
+    background-image: url(src/substract_footer.png);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -30px;
+    width: 19px;
+    height: 24px;
+}
+
+footer p {
+    margin-top: 20px;
+    font-family: "Jura", sans-serif;
+    font-size: 14px;
+    color: #F1F2F6;
+}
+
+.company-name{
+    color: #fff;
+    font-size: 18px;
+}
+
+/* footer */
+
+/* phone adaptive */
+
+@media (max-width: 490px) {
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+header{
+    padding: 0;
+}
+
+header img {
+    width: 40%;
+}
+
+.header__link a{
+    font-size: 14px;
+}
+.mainscreen{
+    height: 80vh;
+}
+.mainscreen_content {
+    padding-top: 100px;
+    flex-direction: column;
+}
+.mainscreen::after {
+    display: none;
+}
+.mainscreen_content__text{
+    position: relative;
+}
+.mainscreen_content::before{
+    content: '';
+    background-image: url(src/phone_card.png);
+    position: absolute;
+    right: 0;
+    width: 88px;
+    height: 220px;
+}
+.mainscreen_content__text h1{
+    font-size: 36px;
+}
+.mainscreen_content__text h3{
+    font-size: 24px;
+}
+.mainscreen_content__calculator {
+    margin-top: 50px;
+    max-width: 100%;
+}
+.mainscreen_content__calculator form {
+    width: 100%;
+}
+.calculator__text {
+    font-size: 14px;
+}
+.calculator__sum span{
+    font-size: 14px;
+}
+.calculator__button {
+    font-size: 16px;
+}
+.how_take{
+    background-color: #F1F2F6;
+}
+.how_take__title {
+    position: relative;
+    justify-content: start;
+    color: #ff7c00;
+    text-align: left;
+}
+.how_take__title h2 {
+    color: #ff7c00;
+    text-align: left;
+}
+.how_take__title h2::after{
+    display: none;
+}
+.how_take__title::before{
+    content: '';
+    background-image: url(src/phone_substract.png);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 29px;
+    height: 36px;
+}
+.how_take__items{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.item {
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.conditions {
+    padding: 60px 0 0 0;
+    height: 100%;
+}
+.conditions__content {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.condition {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 20px 15px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+}
+/* phone adaptive */
