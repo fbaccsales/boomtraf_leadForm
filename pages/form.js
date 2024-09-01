@@ -25,7 +25,8 @@ $(document).ready(function() {
                 contentType: 'application/json', // Вказуємо, що дані передаються у форматі JSON
                 success: function(response) {
                     console.log('Повідомлення надіслано успішно:', response);
-                // Очищення полів input після успішної відправки
+                // Очищення полів input після успішної відправки 
+                    window.location.href = 'https://boomtraf.com';
                     document.querySelector('.form_fields input[placeholder="Ім\'я"]').value = '';
                     document.querySelector('.form_fields input[placeholder="Прізвище"]').value = '';
                     document.getElementById('phone').value = '';
