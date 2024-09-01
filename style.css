@@ -470,6 +470,7 @@ header img {
     background-color: #F1F2F6;
 }
 .how_take__title {
+    margin-top: 70px;
     position: relative;
     justify-content: start;
     color: #ff7c00;
