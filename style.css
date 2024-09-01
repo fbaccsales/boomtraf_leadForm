@@ -417,14 +417,14 @@ header{
 }
 
 header img {
-    width: 40%;
+    width: 30%;
 }
 
 .header__link a{
     font-size: 14px;
 }
 .mainscreen{
-    height: 80vh;
+    height: 100%;
 }
 .mainscreen_content {
     padding-top: 100px;

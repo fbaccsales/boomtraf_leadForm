@@ -16,9 +16,16 @@ rangeInputSecond.addEventListener('input', function() {
 
 // Отримуємо кнопку за її класом
 const redirectButton = document.querySelector('.calculator__button');
+const redirectButton2 = document.querySelector('.calc2');
 
 // Додаємо обробник події для кліку на кнопку
 redirectButton.addEventListener('click', function() {
     // Переадресовуємо користувача на іншу сторінку
-    window.location.href = 'form_page.html';
+    window.location.href = './pages/form_page.html';
+});
+
+// Додаємо обробник події для кліку на кнопку
+redirectButton2.addEventListener('click', function() {
+    // Переадресовуємо користувача на іншу сторінку
+    window.location.href = './pages/form_page.html';
 });

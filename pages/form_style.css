@@ -41,7 +41,7 @@ header {
 
 .header__link::after {
     content: '';
-    background-image: url(src/header_btn.svg);
+    background-image: url(../src/header_btn.svg);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -210,7 +210,7 @@ header{
 }
 
 header img {
-    width: 40%;
+    width: 30%;
 }
 
 .header__link a{
