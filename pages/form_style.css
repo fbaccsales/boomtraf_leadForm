@@ -206,15 +206,19 @@ footer p {
     padding: 0 15px;
 }
 header{
-    padding: 0;
+    padding: 0 15px;
 }
 
 header img {
-    width: 30%;
+    width: 100%;
 }
 
 .header__link a{
     font-size: 14px;
+}
+
+.main_form {
+    height: 70vh!important;
 }
 }
 /* phone adaptive */
