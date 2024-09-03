@@ -434,7 +434,7 @@ header img {
     height: 100%;
 }
 .mainscreen_content {
-    padding-top: 100px;
+    padding-top: 60px;
     flex-direction: column;
 }
 .mainscreen::after {
